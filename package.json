@@ -1,0 +1,27 @@
+{
+  "name": "event-management-system",
+  "version": "1.0.0",
+  "description": "Enterprise Event Management Platform - MERN Stack",
+  "scripts": {
+    "dev": "concurrently --kill-others -n \"SERVER,CLIENT\" -c \"blue,green\" \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "start": "concurrently --kill-others -n \"SERVER,CLIENT\" -c \"blue,green\" \"npm --prefix server start\" \"npm --prefix client run preview\"",
+    "db": "mongod --dbpath data/db",
+    "seed": "npm --prefix server run seed",
+    "build": "npm --prefix server run build && npm --prefix client run build",
+    "install:all": "npm --prefix server install && npm --prefix client install"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.7"
+  },
+  "keywords": [
+    "mern",
+    "event-management",
+    "react",
+    "typescript",
+    "express",
+    "mongodb",
+    "tailwind"
+  ],
+  "author": "Antigravity Engineering Team",
+  "license": "ISC"
+}

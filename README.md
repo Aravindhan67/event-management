@@ -158,4 +158,5 @@ All accounts are pre-seeded with the password: **`password123`** (or use the one
 5. **Password Encryption**: Salted hashes generated via bcrypt.
 6. **HTTP Security Headers**: Enabled via Helmet and configured CORS origin policies.
 #   e v e n t - m a n a g e m e n t  
+ #   e v e n t - m a n a g e m e n t  
  

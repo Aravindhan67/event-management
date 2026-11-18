@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-brand-background text-brand-darkSlate font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading text-brand-primary tracking-tight;
+  }
+
+  .text-white h1,
+  .text-white h2,
+  .text-white h3,
+  .text-white h4,
+  .text-white h5,
+  .text-white h6,
+  [class*="text-white"] h1,
+  [class*="text-white"] h2,
+  [class*="text-white"] h3,
+  [class*="text-white"] h4,
+  [class*="text-white"] h5,
+  [class*="text-white"] h6 {
+    color: inherit;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
